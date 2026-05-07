@@ -62,3 +62,5 @@ Data contract: https://github.com/baditaflorin/reaction-diffusion-patternmaker/b
 Privacy: https://github.com/baditaflorin/reaction-diffusion-patternmaker/blob/main/docs/privacy.md
 
 Deploy guide: https://github.com/baditaflorin/reaction-diffusion-patternmaker/blob/main/docs/deploy.md
+
+Postmortem: https://github.com/baditaflorin/reaction-diffusion-patternmaker/blob/main/docs/postmortem.md
