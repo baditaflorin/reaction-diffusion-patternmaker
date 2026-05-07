@@ -1,0 +1,52 @@
+{
+  "name": "reaction-diffusion-patternmaker",
+  "version": "0.1.0",
+  "private": false,
+  "description": "A browser lab for live Gray-Scott patterns, musical sonification, and exportable textures.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "prebuild": "node scripts/write-build-info.mjs && node scripts/clean-pages-assets.mjs",
+    "build": "vite build && node scripts/copy-404.mjs",
+    "preview:pages": "node scripts/serve-pages.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "fmt": "prettier --write .",
+    "fmt:check": "prettier --check .",
+    "test": "vitest run",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.7",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.184.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22.19.0",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "@types/three": "^0.181.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "@webgpu/types": "^0.1.69",
+    "autoprefixer": "^10.4.22",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^9.1.2",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^3.4.18",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.3",
+    "vite": "^7.3.3",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

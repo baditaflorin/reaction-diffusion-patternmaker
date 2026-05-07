@@ -1,0 +1,17 @@
+{
+  "name": "Reaction Diffusion Patternmaker",
+  "short_name": "Patternmaker",
+  "description": "Live Gray-Scott reaction-diffusion patterns with audio and export.",
+  "start_url": "/reaction-diffusion-patternmaker/",
+  "scope": "/reaction-diffusion-patternmaker/",
+  "display": "standalone",
+  "background_color": "#101112",
+  "theme_color": "#101112",
+  "icons": [
+    {
+      "src": "/reaction-diffusion-patternmaker/icon.svg",
+      "sizes": "128x128",
+      "type": "image/svg+xml"
+    }
+  ]
+}
