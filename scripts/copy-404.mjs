@@ -1,3 +1,6 @@
-import { copyFileSync } from 'node:fs';
+import { copyFileSync } from "node:fs";
 
-copyFileSync(new URL('../docs/index.html', import.meta.url), new URL('../docs/404.html', import.meta.url));
+copyFileSync(
+  new URL("../docs/index.html", import.meta.url),
+  new URL("../docs/404.html", import.meta.url),
+);

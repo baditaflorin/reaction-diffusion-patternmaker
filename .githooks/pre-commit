@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+set -eu
+
+npm run fmt:check
+npm run lint
+npm run typecheck
+npm run test
+
+if command -v gitleaks >/dev/null 2>&1; then
+  gitleaks protect --staged --redact
+else
+  printf "%s\n" "gitleaks not installed; skipping local secret scan"
+fi
